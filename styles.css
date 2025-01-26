@@ -1,0 +1,151 @@
+html, body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #030303;
+    margin: 0;
+    padding-right: 3vw;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin: 2.6vw;
+    
+}
+
+.text{
+    font-family: Arial, sans-serif;
+    font-size: 8vw;
+    color: #F9F9F9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+@media (max-width: 650px) {
+    .text{
+        display: none;
+    }
+}
+
+.bar {
+    flex-grow: 1;
+    height: 5vw; 
+    background: url('img.jpg') no-repeat center center;
+    background-size: 200% 300%; 
+    position: relative;
+    animation: moveImage 30s infinite linear; 
+}
+
+.bar1 {
+    background-position: center 0%; 
+}
+
+
+.bar2 {
+    background-position: center 25%; 
+}
+
+
+.bar3 {
+    background-position: center 50%; 
+}
+
+.bar4{
+    background-position: center 75%; 
+}
+
+
+@keyframes moveImage {
+    0% {
+        background-position: center 0%; 
+    }
+    25% {
+        background-position: center 25%; 
+    }
+    50% {
+        background-position: center 50%; 
+    }
+    75% {
+        background-position: center 75%; 
+    }
+    100% {
+        background-position: center 0%; 
+    }
+}
+
+.text-mobil{
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .text-mobil{
+        font-family: Arial, sans-serif;
+        font-size: 12vw;
+        color: #F9F9F9;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3vw;
+    }
+}
+.bar-mobil {
+    flex-grow: 1;
+    height: 8vw; /* Высота полосок */
+    background: url('img.jpg') no-repeat center center;
+    background-size: 200% 300%;
+    position: relative;
+    animation: moveImage 30s infinite linear;
+}
+
+/* Индивидуальные стили для каждой полоски */
+.bar-mobil-1 {
+    background-position: center 0%;
+}
+
+.bar-mobil-2 {
+    background-position: center 25%;
+}
+
+.bar-mobil-3 {
+    background-position: center 50%;
+}
+
+.bar-mobil-4 {
+    background-position: center 75%;
+}
+
+.bar-mobil-5 {
+    background-position: center 100%;
+}
+
+/* Анимация движения фона */
+@keyframes moveImage {
+    0% {
+        background-position: center 0%;
+    }
+    25% {
+        background-position: center 25%;
+    }
+    50% {
+        background-position: center 50%;
+    }
+    75% {
+        background-position: center 75%;
+    }
+    100% {
+        background-position: center 100%;
+    }
+}
+
+
+
+
+
+
